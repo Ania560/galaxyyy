@@ -1,1 +1,45 @@
 <!DOCTYPE html>
+<html>
+<head>
+	<title>ćwiczenia z js</title>
+</head>
+
+<body>
+	<button id="jeden" onclick="star()">wciśnij mnie</button>
+
+	<button id="dwa" onclick="hole()">naciskaj</button>
+
+	<button id="trzy" onclick="earth()">naciśnij pls</button>
+
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		
+		function japko(a,b){
+			console.log(a+b);
+		
+       }
+       japko(2,5)
+
+      function star(){
+      	alert('OJEJKU')
+      }
+
+      function hole(){
+      	confirm("zgadzasz sie?");
+      }
+	  function earth(){
+	  	var name= prompt("What is your name?","Harry Potter");
+	  	if (name !=null) {
+ 
+             document.getElementById('demo').innerHTML = 
+             " Hello " + name + " jak sie masz ";
+        }
+	  }
+
+	</script>
+
+	
+
+</body>
+</html>
